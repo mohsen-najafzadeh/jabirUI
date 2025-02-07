@@ -1,6 +1,6 @@
-# Simple Wrapper for Large Language Model
+# Simple Persian and RTL Wrapper for Large Language Model
 
-This project provides a simple wrapper for invoking language models. Built with Python Django. 
+This project provides a simple Persian and RTL Wrapper for invoking language models. Built with Python Django. 
 As a sample, the project uses the **Jabir** language model (jabirproject.org), also present how to easily integrate and interact with large language models
 
 ![Demo](images/demo.jpg)
@@ -25,4 +25,5 @@ python manage.py runserver
 
 ## Appendix & Acknowledgment
 
-jabir model : https://jabirproject.org/
+- jabir model : https://jabirproject.org/
+- Muhammadreza aghiri
