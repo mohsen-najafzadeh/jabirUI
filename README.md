@@ -26,4 +26,4 @@ python manage.py runserver
 ## Appendix & Acknowledgment
 
 - jabir model : https://jabirproject.org/
-- Muhammadreza aghiri
+- Muhammadreza aghiri (https://github.com/mann-e)
