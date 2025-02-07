@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <title>گفتگو آنلاین با مدل زبانی جبیر</title>
+
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/home_styles.css' %}">
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+
+    <div class="chat-box">
+        <div class="bg-black text-white text-center py-2">
+            <h5>گفتگو آنلاین با هوش مصنوعی و مدل زبانی جبیر</h5>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message received">
+                <div class="bubble">سلام! چطور می‌توانم کمکتون کنم؟ 😊</div>
+            </div>
+        </div>
+
+        <div class="chat-input d-flex">
+            <input type="text" id="messageInput" class="form-control" placeholder="پیام خود را بنویسید ...">
+            <button id="sendBtn" class="btn btn-primary ms-2">ارسال ⮜</button>
+        </div>
+    </div>
+</body>
+<script src="{% static '/js/home_scripts.js' %}"></script>
+
+</html>

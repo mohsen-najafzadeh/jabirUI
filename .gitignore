@@ -1,0 +1,25 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Django migrations
+*/migrations/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# SQLite database
+db.sqlite3
+
+# Django secret key
+.secret_key/
+
+# IDEs and editors
+.vscode/
+
+# Windows
+Thumbs.db
