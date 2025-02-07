@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from openai import OpenAI
+import markdown
 
 def home(request):
     return render(request, 'home.html')
@@ -20,5 +21,7 @@ def jabir_startchat(request):
                 }
                 ]
             )
-            return JsonResponse({'message': full.choices[0].message.content})
+            result_markdown = full.choices[0].message.content
+            result_html = markdown.markdown(result_markdown)
+            return JsonResponse({'message': result_html})
         return JsonResponse({'message': 'درخواست نامعتبر است.'}, status=400)
